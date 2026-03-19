@@ -4,12 +4,12 @@ color[] c = new color[5];
 
 void setup() {
   size(600, 800);
-  colorMode(HSB);   // 推荐开启
+  colorMode(HSB);  
   
   img = loadImage("color.jpg");
   img.loadPixels();
   
-  // 随机提取5个颜色
+// randomly extract 5 color
   for (int i = 0; i < 5; i++) {
     c[i] = img.pixels[int(random(img.pixels.length))];
   }
