@@ -297,7 +297,7 @@ class Obstacle {
   
   void display() {
     imageMode(CORNER);
-    image(obstacleImgs[type],x,groundY + 20 - h,w,h);
+    image(obstacleImgs[type],x,groundY + 25 - h,w,h);
   }
   
   boolean hit(float px, float py, float r) {
